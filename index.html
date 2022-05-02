@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Made Sakadea Jagath Baratha, Portfolio, made sakadea jagath baratha, sakadeajagath">
+    <meta name="author" content="Made Sakadea Jagath Baratha">
+    <meta property="og:title" content="Made Sakadea Jagath Baratha">
+    <meta property="og:description" content="Made Sakadea Jagath Baratha Website Portfolio.">
+    <title>Made Sakadea Jagath Baratha</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+
+    <!-- font Family Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- smooth scrool -->
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+
+    <!-- Animate css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+    <style>
+        
+    </style>
+</head>
+
+<body class="bg-gray-800 font-poppins overscroll-auto">
+    <!-- Alpine js -->
+    <script defer="" src="https://unpkg.com/alpinejs@3.2.3/dist/cdn.min.js"></script>
+
+    <div class="bg-gray-100" x-data="topBtn">
+        <button @click="scrolltoTop" id="topButton" class="text-3xl text-gray-100 fixed z-10 opacity-80 bottom-5 right-5 hidden">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </div>
+
+
+    <!-- navbar start -->
+    <div class="container">
+        <div class="flex flex-col md:flex-row px-4  wow slideInDown animated" style="visibility: visible; animation-name: slideInDown;">
+            <div class="flex justify-between items-center px-4 py-4 md:py-0 border-b border-gray-700 md:border-b-0">
+                <div class="wow slideInLeft" data-wow-delay="1s" style="visibility: visible; animation-delay: 1s; animation-name: slideInLeft;">
+                    <a href="#" class="uppercase font-semibold text-gray-100 md:mr-4 tracking-widest ">SAKADEAJAGATH</a>
+                </div>
+
+                <!-- Hamburger menu mobile -->
+                <div class="nav-toggler">
+                    <button class="items-center animated slideInRight">
+                        <svg class="transition duration-500 ease-in-out w-6 h-6 outline-none text-gray-100 block md:hidden" classname="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path fillrule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" cliprule="evenodd"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="transition duration-500 ease-in-out nav md:flex hidden flex-col md:flex-row justify-between w-full py-4 md:py-0 md:bg-transparent bg-gray-700 rounded-xl">
+                <div class="transition duration-500 ease-in-out flex flex-col md:flex-row md:gap-4"></div>
+
+                <div class="transition duration-500 ease-in-out flex flex-col md:flex-row md:gap-4 p-4">
+                    <a href="#" class="block px-4 py-2 md:py-1 rounded-md my-2 text-gray-100 md:text-left text-center hover:bg-gray-800 transition duration-200 ease-in-out  wow slideInDown" style="visibility: visible; animation-name: slideInDown;">About</a>
+                    <a href="#portfolio" class="block px-4 py-2 md:py-1 rounded-md md:my-2 text-gray-100 md:text-left text-center hover:bg-gray-800 transition duration-200 ease-in-out  wow slideInDown" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: slideInDown;">Portfolio</a>
+                    <a href="mailto:sakadea2014@gmail.com?subject=Email%20dari%20sakadea.me" class="block px-4 py-2 md:py-1 rounded-md my-2 text-gray-100 md:text-left text-center hover:bg-gray-800 transition duration-200 ease-in-out  wow slideInDown" data-wow-delay="1s" style="visibility: visible; animation-delay: 1s; animation-name: slideInDown;">Contact</a>
+                </div>
+
+                <!-- social for desktop -->
+                <div class="flex flex-col md:flex-row md:gap-3 md:items-center">
+                    <a href="https://www.instagram.com/ltdtwxtctztma/" class="hidden md:block px-4 py-2 md:py-1 rounded-md my-2 text-gray-100  wow slideInDown" data-wow-delay="0.5s" target="_blank" style="visibility: visible; animation-delay: 0.5s; animation-name: slideInDown;"><i class="fab fa-instagram text-xl"></i></a>
+                    <a href="https://www.linkedin.com/in/made-sakadea-jagath-baratha/" class="hidden md:block px-4 py-2 md:py-1 rounded-md my-2 text-gray-100  wow slideInDown" data-wow-delay="1s" target="_blank" style="visibility: visible; animation-delay: 1s; animation-name: slideInDown;"><i class="fab fa-linkedin text-xl"></i></a>
+
+                    <!-- social for mobile -->
+                    <div class="flex md:hidden align-center justify-around">
+                        <a href="https://www.instagram.com/ltdtwxtctztma/" target="_blank"><i class="text-gray-50 hover:text-gray-300 transition duration-300 ease-in-out fab fa-instagram text-xl"></i></a>
+                        <a href="https://www.linkedin.com/in/made-sakadea-jagath-baratha/" target="_blank"><i class="text-gray-50 hover:text-gray-300 transition duration-300 ease-in-out fab fa-linkedin text-xl"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- navbar end -->
+
+        <!-- main page -->
+        <section class="mt-10">
+            <div class="mx-4 text-gray-50">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 px-4 h-62">
+                    <div class="flex">
+                        <svg class="w-52 h-52 md:w-52 md:h-52 rounded-3xl md:rounded-full animated wow slideInLeft"
+                            data-wow-delay="1s" alt="" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg"
+                            style="visibility: visible; animation-delay: 1s; animation-name: slideInLeft;">
+                            <defs>
+                                <clippath id="shape">
+                                    <path id="blob"
+                                        d="M439.5,297.5Q398,345,370.5,399Q343,453,281.5,456Q220,459,182,415.5Q144,372,105,338Q66,304,75,252.5Q84,201,105.5,154.5Q127,108,177.5,102.5Q228,97,280.5,82.5Q333,68,380,102Q427,136,454,193Q481,250,439.5,297.5Z"
+                                        fill="none" stroke-width="7px" stroke="#d1d8e0"></path>
+                                </clippath>
+                            </defs>
+                            <image x="0" y="0" width="100%" height="100%" clip-path="url(#shape)"
+                                href="assets/p.png"
+                                preserveAspectRatio="none"></image>
+                        </svg>
+                        <div class="block ml-3 md:ml-10 py-5  wow slideInLeft animated" data-wow-delay="0.5s"
+                            style="visibility: visible; animation-delay: 0.5s; animation-name: slideInLeft;">
+                            <p class="block">Hello World, I'm</p>
+                            <h2 class="block text-xl lg:text-4xl">Made Sakadea Jagath Baratha</h2>
+                            <p class="text-sm opacity-70 mt-2">Computer System, STIKOM Bali Institute of Technology and Business.</p>
+                            <div class="mt-3 md:mt-5 space-x-6">
+                                <a href="https://github.com/sakadeajagath" target="_blank">
+                                    <i
+                                        class="fab fa-github md:text-2xl hover:text-gray-300 transition duration-300 ease-in-out"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2">
+                        <div class="lg:block  wow slideInRight animated" data-wow-delay="0.5s"
+                            style="visibility: visible; animation-delay: 0.5s; animation-name: slideInRight;">
+                            <p class="block pt-5 text-center md:text-left">Career</p>
+                            <ul class="mt-2">
+                                <li class="text-lg mt-2  text-center md:text-left">SMK Wira Harapan</li>
+                                <p class="text-sm opacity-70  text-center md:text-left">Rekayasa Perangkat Lunak 2013 - 2016</p>
+                                <li class="text-lg mt-2  text-center md:text-left">Institut Teknologi dan Bisnis <br> STIKOM Bali</li>
+                                <p class="text-sm opacity-70  text-center md:text-left">Sistem Komputer 2016</p>
+                            </ul>
+                        </div>
+                        <div class="lg:block  wow slideInRight animated" data-wow-delay="1s"
+                            style="visibility: visible; animation-delay: 1s; animation-name: slideInRight;">
+                            <p class="block pt-5 text-center md:text-left mt-5 md:mt-0">Experience</p>
+                            <ul class="mt-2">
+                                <li class="text-lg text-center md:text-left">Magang (Institut Teknologi dan Bisnis STIKOM Bali)</li>
+                                <p class="text-sm opacity-70 text-center md:text-left">2019</p>
+                                <li class="text-lg mt-2 text-center md:text-left">Volunteer (Kementerian Riset, Teknologi, dan Pendidikan Tinggi)</li>
+                                <p class="text-sm opacity-70 text-center md:text-left">2019</p>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills">
+                    <h1 class="text-center text-gray-50 mt-10 md:mt-5  wow slideInLeft animated" data-wow-delay="0s"
+                        style="visibility: visible; animation-delay: 0s; animation-name: slideInLeft;">Familiar with
+                    </h1>
+                    <div class="image-logo justify-center flex gap-6 sm:gap-3">
+                        <img src="assets/bootstrap-5-1.svg" alt="laravel" class="w-14 mt-3 shadow-xl rounded-xl  wow slideInUp animated" data-wow-delay="1s" style="visibility: visible; animation-delay: 1s; animation-name: slideInUp;">
+                        <img src="assets/laravel-2.svg" alt="bootstrap" class="w-14 mt-3 shadow-xl rounded-xl  wow slideInUp animated" data-wow-delay="1.25s" style="visibility: visible; animation-delay: 1.25s; animation-name: slideInUp;">
+                        <img src="assets/github-icon-1.svg" alt="react" class="w-14 mt-3 shadow-xl rounded-xl  wow slideInUp animated" data-wow-delay="1.5s" style="visibility: visible; animation-delay: 1.5s; animation-name: slideInUp;">
+                        <img src="assets/visual-studio-code-1.svg" alt="vscode" class="w-14 mt-3 shadow-xl rounded-xl  wow slideInUp animated" data-wow-delay="1.75s" style="visibility: visible; animation-delay: 2s; animation-name: slideInUp;">
+                    </div>
+                </div>
+                <div class="flex justify-between items-center mx-4 py-6 border-b border-gray-700 md:border-b-0"> </div>
+            </div>
+        </section>
+
+        <!-- To Top -->
+        <script>
+            document.addEventListener('alpine:init', () => {
+                Alpine.data('topBtn', () => ({
+                    scrolltoTop() {
+                        document.body.scrollTop = 0;
+                        document.documentElement.scrollTop = 0;
+                    }
+                }));
+            });
+
+            var topBtn = document.getElementById("topButton");
+            window.onscroll = function () {
+                (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) ?
+                    topBtn.classList.remove("hidden") : topBtn.classList.add("hidden");
+
+            }
+        </script>
+
+        <section class="portfolio">
+            <h1 class="text-center text-gray-50 text-lg mt-10 md:mt-0  wow slideInRight animated" data-wow-delay="0s"
+                id="portfolio" style="visibility: visible; animation-delay: 0s; animation-name: slideInRight;">Portfolio
+            </h1>
+            <div class="px-10 mt-5 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
+                <!--Card 1-->
+                <div class="rounded-3xl overflow-hidden bg-gray-700  wow slideInUp animated" data-wow-delay="0.25s"
+                    style="visibility: visible; animation-delay: 0.25s; animation-name: slideInUp;">
+                    <img class="w-full rounded-t-3xl" src="assets/perwalian1.PNG"
+                        alt="Ammarbahtiar Restaurant">
+                    <div class="px-6 py-4">
+                        <div class="font-semibold text-gray-50 text-xl mb-2">Penjadwalan Perwalian ITB STIKOM Bali</div>
+                        <p class="text-gray-50 text-justify text-sm">
+                            The restaurant website for the school test, was created with the Codeigniter 4 Framework and
+                            bootstrap 4 with a Mysql database.
+                        </p>
+                    </div>
+                    <div class="px-6 pb-4">
+                        <a class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 cursor-pointer hover:bg-gray-400 transition duration-300 ease-in-out" href="https://ammarbahtiar.my.id/#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <!--Card 2-->
+                <div class="rounded-3xl overflow-hidden bg-gray-700  wow slideInUp animated" data-wow-delay="0.5s"
+                    style="visibility: visible; animation-delay: 0.5s; animation-name: slideInUp;">
+                    <img class="w-full rounded-t-3xl" src="assets/sionapi.PNG"
+                        alt="SMP Negeri 4 Pamarican">
+                    <div class="px-6 py-4">
+                        <div class="font-bold text-gray-50 text-xl mb-2">SION API ITB STIKOM Bali</div>
+                        <p class="text-gray-50 text-justify text-sm">
+                            Website of SMPN 4 Pamarican, Ciamis. School Prakerin assignment, created with Codeigniter 3
+                            Framework and Bootstrap 4 with Mysql database.
+                        </p>
+                    </div>
+                    <div class="px-6 pb-4">
+                        <a class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 cursor-pointer hover:bg-gray-400 transition duration-300 ease-in-out" href="https://smpnegeri4pamarican.sch.id/"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <!--Card 3-->
+                <div class="rounded-3xl overflow-hidden bg-gray-700  wow slideInUp animated" data-wow-delay="0.5s"
+                    style="visibility: visible; animation-delay: 0.5s; animation-name: slideInUp;">
+                    <img class="w-full rounded-t-3xl" src="assets/hakteknas.PNG"
+                        alt="SMP Negeri 4 Pamarican">
+                    <div class="px-6 py-4">
+                        <div class="font-bold text-gray-50 text-xl mb-2">Hari Kebangkitan Teknologi Nasional (HAKTEKNAS) 24 - Bali</div>
+                        <p class="text-gray-50 text-justify text-sm">
+                            Website of SMPN 4 Pamarican, Ciamis. School Prakerin assignment, created with Codeigniter 3
+                            Framework and Bootstrap 4 with Mysql database.
+                        </p>
+                    </div>
+                    <div class="px-6 pb-4">
+                        <a class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 cursor-pointer hover:bg-gray-400 transition duration-300 ease-in-out" href="https://smpnegeri4pamarican.sch.id/"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    <!-- footer -->
+    <div class="footer mt-16 bg-gray-700 py-4 text-gray-50">
+        <div class="text-center">
+            <span>2022 © <a href="https://ammarbahtiar.me/" class="font-semibold hover:text-gray-800">Made Sakadea Jagath Baratha</a></span>
+        </div>
+    </div>
+
+    <!-- Jquery -->
+    <script src="js/jquery.min.js"></script>
+
+    <!-- animate js -->
+    <script src="js/wow.js"></script>
+
+    <!-- init wowjs -->
+    <script>
+        new WOW().init();
+    </script>
+
+    <script src="js/hamburger.js"></script>
+
+
+</body>
+
+</html>
