@@ -1,235 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="Made Sakadea Jagath Baratha, Portfolio, made sakadea jagath baratha, sakadeajagath">
-    <meta name="author" content="Made Sakadea Jagath Baratha">
-    <meta property="og:title" content="Made Sakadea Jagath Baratha">
-    <meta property="og:description" content="Made Sakadea Jagath Baratha Website Portfolio.">
-    <title>Made Sakadea Jagath Baratha</title>
-
-    <!-- css -->
-    <link rel="stylesheet" href="css/style.css">
-
-    <!-- fontawesome -->
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
-
-    <!-- font Family Poppins -->
-    <link rel="preconnect" href="https://fonts.googleapis.com/">
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-
-    <!-- smooth scrool -->
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
-    </style>
-
-    <!-- Animate css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-
-    <style>
-        
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#151816">
+  <meta name="description" content="Made Sakadea Jagath Baratha — Penetration Tester at PT Protergo Siber Sekuriti. Explore security experience, vulnerability research, responsible disclosure, and certifications.">
+  <meta name="author" content="Made Sakadea Jagath Baratha">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Sakadea Jagath | Penetration Testing & Security Research">
+  <meta property="og:description" content="Penetration testing and security research. Web application, backend, and infrastructure testing, vulnerability validation, and responsible disclosure.">
+  <title>Sakadea Jagath | Penetration Testing & Security Research</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
 </head>
-
-<body class="bg-gray-800 font-poppins overscroll-auto">
-    <!-- Alpine js -->
-    <script defer="" src="https://unpkg.com/alpinejs@3.2.3/dist/cdn.min.js"></script>
-
-    <div class="bg-gray-100" x-data="topBtn">
-        <button @click="scrolltoTop" id="topButton" class="text-3xl text-gray-100 fixed z-10 opacity-80 bottom-5 right-5 hidden">
-            <i class="fas fa-arrow-up"></i>
-        </button>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="wordmark" href="#home" aria-label="Sakadea Jagath home"><span class="brand-mark" aria-hidden="true">s.</span><span>sakadea<span class="muted">jagath</span></span></a>
+      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-navigation"><span></span><span></span></button>
+      <nav id="primary-navigation" class="navigation" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#research">Research</a>
+        <a href="#credentials">Credentials</a>
+        <a class="nav-contact" href="#contact">Let’s talk <span aria-hidden="true">↗</span></a>
+      </nav>
     </div>
-
-
-    <!-- navbar start -->
-    <div class="container">
-        <div class="flex flex-col md:flex-row px-4  wow slideInDown animated" style="visibility: visible; animation-name: slideInDown;">
-            <div class="flex justify-between items-center px-4 py-4 md:py-0 border-b border-gray-700 md:border-b-0">
-                <div class="wow slideInLeft" data-wow-delay="1s" style="visibility: visible; animation-delay: 1s; animation-name: slideInLeft;">
-                    <a href="#" class="uppercase font-semibold text-gray-100 md:mr-4 tracking-widest ">SAKADEAJAGATH</a>
-                </div>
-
-                <!-- Hamburger menu mobile -->
-                <div class="nav-toggler">
-                    <button class="items-center animated slideInRight">
-                        <svg class="transition duration-500 ease-in-out w-6 h-6 outline-none text-gray-100 block md:hidden" classname="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path fillrule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" cliprule="evenodd"></path>
-                        </svg>
-                    </button>
-                </div>
-            </div>
-            <div class="transition duration-500 ease-in-out nav md:flex hidden flex-col md:flex-row justify-between w-full py-4 md:py-0 md:bg-transparent bg-gray-700 rounded-xl">
-                <div class="transition duration-500 ease-in-out flex flex-col md:flex-row md:gap-4"></div>
-
-                <div class="transition duration-500 ease-in-out flex flex-col md:flex-row md:gap-4 p-4">
-                    <a href="#" class="block px-4 py-2 md:py-1 rounded-md my-2 text-gray-100 md:text-left text-center hover:bg-gray-800 transition duration-200 ease-in-out  wow slideInDown" style="visibility: visible; animation-name: slideInDown;">About</a>
-                    <a href="#portfolio" class="block px-4 py-2 md:py-1 rounded-md md:my-2 text-gray-100 md:text-left text-center hover:bg-gray-800 transition duration-200 ease-in-out  wow slideInDown" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: slideInDown;">Portfolio</a>
-                    <a href="mailto:sakadea2014@gmail.com?subject=Email%20dari%20sakadea.me" class="block px-4 py-2 md:py-1 rounded-md my-2 text-gray-100 md:text-left text-center hover:bg-gray-800 transition duration-200 ease-in-out  wow slideInDown" data-wow-delay="1s" style="visibility: visible; animation-delay: 1s; animation-name: slideInDown;">Contact</a>
-                </div>
-
-                <!-- social for desktop -->
-                <div class="flex flex-col md:flex-row md:gap-3 md:items-center">
-                    <a href="https://www.instagram.com/ltdtwxtctztma/" class="hidden md:block px-4 py-2 md:py-1 rounded-md my-2 text-gray-100  wow slideInDown" data-wow-delay="0.5s" target="_blank" style="visibility: visible; animation-delay: 0.5s; animation-name: slideInDown;"><i class="fab fa-instagram text-xl"></i></a>
-                    <a href="https://www.linkedin.com/in/made-sakadea-jagath-baratha/" class="hidden md:block px-4 py-2 md:py-1 rounded-md my-2 text-gray-100  wow slideInDown" data-wow-delay="1s" target="_blank" style="visibility: visible; animation-delay: 1s; animation-name: slideInDown;"><i class="fab fa-linkedin text-xl"></i></a>
-
-                    <!-- social for mobile -->
-                    <div class="flex md:hidden align-center justify-around">
-                        <a href="https://www.instagram.com/ltdtwxtctztma/" target="_blank"><i class="text-gray-50 hover:text-gray-300 transition duration-300 ease-in-out fab fa-instagram text-xl"></i></a>
-                        <a href="https://www.linkedin.com/in/made-sakadea-jagath-baratha/" target="_blank"><i class="text-gray-50 hover:text-gray-300 transition duration-300 ease-in-out fab fa-linkedin text-xl"></i></a>
-                    </div>
-                </div>
-            </div>
+  </header>
+  <main id="main">
+    <section class="hero container" id="home" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Penetration testing · Security research</p>
+        <h1 id="hero-title">Security focused.<br><span>Research<br class="desktop-break"> driven.</span></h1>
+        <p class="hero-intro">Hi, I’m <strong>Made Sakadea Jagath Baratha.</strong><br>A Penetration Tester at PT Protergo Siber Sekuriti, focused on finding vulnerabilities, understanding their impact, and helping teams verify the fixes.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#experience">View security experience <span aria-hidden="true">↗</span></a>
+          <a class="text-link" href="assets/CV_Made_Sakadea_Jagath_Baratha.pdf" download>Download CV <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3v12m-4-4 4 4 4-4M5 16v5h14v-5"/></svg></a>
         </div>
-        <!-- navbar end -->
-
-        <!-- main page -->
-        <section class="mt-10">
-            <div class="mx-4 text-gray-50">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 px-4 h-62">
-                    <div class="flex">
-                        <svg class="w-52 h-52 md:w-52 md:h-52 animated wow slideInLeft"
-                            data-wow-delay="1s" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg" style="visibility: visible; animation-delay: 1s; animation-name: slideInLeft;">
-                            <image x="0" y="0" width="100%" height="100%" href="assets/p.jpg" preserveAspectRatio="none"></image>
-                        </svg>
-                        <div class="block ml-3 md:ml-10 py-5  wow slideInLeft animated" data-wow-delay="0.5s"
-                            style="visibility: visible; animation-delay: 0.5s; animation-name: slideInLeft;">
-                            <p class="block">Hello World, I'm</p>
-                            <h2 class="block text-xl lg:text-4xl">Made Sakadea Jagath Baratha</h2>
-                            <p class="text-sm opacity-70 mt-2">Computer System, STIKOM Bali Institute of Technology and Business <br> Denpasar.</p>
-                            <div class="mt-3 md:mt-5 space-x-6">
-                                <a href="https://github.com/sakadeajagath" target="_blank">
-                                    <i
-                                        class="fab fa-github md:text-2xl hover:text-gray-300 transition duration-300 ease-in-out"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid grid-cols-1 md:grid-cols-2">
-                        <div class="lg:block  wow slideInRight animated" data-wow-delay="0.5s"
-                            style="visibility: visible; animation-delay: 0.5s; animation-name: slideInRight;">
-                            <p class="block pt-5 text-center md:text-left">Career</p>
-                            <ul class="mt-2">
-                                <li class="text-lg mt-2  text-center md:text-left">Wira Harapan Vocational High School</li>
-                                <p class="text-sm opacity-70  text-center md:text-left">Software Engineering 2013 - 2016</p>
-                                <li class="text-lg mt-2  text-center md:text-left">STIKOM Bali Institute of Technology and Business</li>
-                                <p class="text-sm opacity-70  text-center md:text-left">Computer System 2016</p>
-                            </ul>
-                        </div>
-                        <div class="lg:block  wow slideInRight animated" data-wow-delay="1s"
-                            style="visibility: visible; animation-delay: 1s; animation-name: slideInRight;">
-                            <p class="block pt-5 text-center md:text-left mt-5 md:mt-0">Experience</p>
-                            <ul class="mt-2">
-                                <li class="text-lg text-center md:text-left">Intership (STIKOM Bali Institute of Technology and Business)</li>
-                                <p class="text-sm opacity-70 text-center md:text-left">2019</p>
-                                <li class="text-lg mt-2 text-center md:text-left">Volunteer (Ministry of Research, Technology and Higher Education Indonesia)</li>
-                                <p class="text-sm opacity-70 text-center md:text-left">2019</p>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="skills">
-                    <h1 class="text-center text-gray-50 mt-10 md:mt-5  wow slideInLeft animated" data-wow-delay="0s"
-                        style="visibility: visible; animation-delay: 0s; animation-name: slideInLeft;">Familiar with
-                    </h1>
-                    <div class="image-logo justify-center flex gap-6 sm:gap-3">
-                        <img src="assets/bootstrap-5-1.svg" alt="laravel" class="w-14 mt-3 shadow-xl rounded-xl  wow slideInUp animated" data-wow-delay="1s" style="visibility: visible; animation-delay: 1s; animation-name: slideInUp;">
-                        <img src="assets/laravel-2.svg" alt="bootstrap" class="w-14 mt-3 shadow-xl rounded-xl  wow slideInUp animated" data-wow-delay="1.25s" style="visibility: visible; animation-delay: 1.25s; animation-name: slideInUp;">
-                        <img src="assets/github-icon-1.svg" alt="react" class="w-14 mt-3 shadow-xl rounded-xl  wow slideInUp animated" data-wow-delay="1.5s" style="visibility: visible; animation-delay: 1.5s; animation-name: slideInUp;">
-                        <img src="assets/visual-studio-code-1.svg" alt="vscode" class="w-14 mt-3 shadow-xl rounded-xl  wow slideInUp animated" data-wow-delay="1.75s" style="visibility: visible; animation-delay: 2s; animation-name: slideInUp;">
-                    </div>
-                </div>
-                <div class="flex justify-between items-center mx-4 py-6 border-b border-gray-700 md:border-b-0"> </div>
-            </div>
-        </section>
-
-        <!-- To Top -->
-        <script>
-            document.addEventListener('alpine:init', () => {
-                Alpine.data('topBtn', () => ({
-                    scrolltoTop() {
-                        document.body.scrollTop = 0;
-                        document.documentElement.scrollTop = 0;
-                    }
-                }));
-            });
-
-            var topBtn = document.getElementById("topButton");
-            window.onscroll = function () {
-                (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) ?
-                    topBtn.classList.remove("hidden") : topBtn.classList.add("hidden");
-
-            }
-        </script>
-
-        <section class="portfolio">
-            <h1 class="text-center text-gray-50 text-lg mt-10 md:mt-0  wow slideInRight animated" data-wow-delay="0s"
-                id="portfolio" style="visibility: visible; animation-delay: 0s; animation-name: slideInRight;">Portfolio
-            </h1>
-            <div class="px-10 mt-5 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
-                <!--Card 1-->
-                <div class="rounded-3xl overflow-hidden bg-gray-700  wow slideInUp animated" data-wow-delay="0.25s"
-                    style="visibility: visible; animation-delay: 0.25s; animation-name: slideInUp;">
-                    <img class="w-full rounded-t-3xl" src="assets/perwalian1.PNG"
-                        alt="Ammarbahtiar Restaurant">
-                    <div class="px-6 py-4">
-                        <div class="font-semibold text-gray-50 text-xl mb-2">Guardianship Scheduling ITB STIKOM Bali</div>
-                        <p class="text-gray-50 text-justify text-sm">Guardianship scheduling ITB STIKOM Bali was created with the Laravel 6 Framework with a SQL SERVER 2008 DBMS (Database).</p>
-                    </div>
-                </div>
-                <!--Card 2-->
-                <div class="rounded-3xl overflow-hidden bg-gray-700  wow slideInUp animated" data-wow-delay="0.5s"
-                    style="visibility: visible; animation-delay: 0.5s; animation-name: slideInUp;">
-                    <img class="w-full rounded-t-3xl" src="assets/sionapi.PNG"
-                        alt="SMP Negeri 4 Pamarican">
-                    <div class="px-6 py-4">
-                        <div class="font-bold text-gray-50 text-xl mb-2">SION API ITB STIKOM Bali</div>
-                        <p class="text-gray-50 text-justify text-sm">Application Programming Interface (API) SION ITB STIKOM Bali, created with the Lumen 6 Framework with a SQL SERVER 2008 DBMS (Database).</p>
-                    </div>
-                </div>
-                <!--Card 3-->
-                <div class="rounded-3xl overflow-hidden bg-gray-700  wow slideInUp animated" data-wow-delay="0.5s"
-                    style="visibility: visible; animation-delay: 0.5s; animation-name: slideInUp;">
-                    <img class="w-full rounded-t-3xl" src="assets/hakteknas.PNG"
-                        alt="SMP Negeri 4 Pamarican">
-                    <div class="px-6 py-4">
-                        <div class="font-bold text-gray-50 text-xl mb-2">National Technology Day (HAKTEKNAS) 24 - Bali</div>
-                        <p class="text-gray-50 text-justify text-sm">National Technology Day web application has been created with the Laravel 5.8 Framework and Vue js with a MySQL DBMS (Database).</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-    </div>
-    <!-- footer -->
-    <div class="footer mt-16 bg-gray-700 py-4 text-gray-50">
-        <div class="text-center">
-            <span>2022 © <a href="https://sakadeajagath.github.io" class="font-semibold hover:text-gray-800">Made Sakadea Jagath Baratha</a></span>
+        <div class="hero-socials"><a href="https://www.linkedin.com/in/sakadeajagath/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a><span aria-hidden="true">/</span><a href="https://github.com/sakadeajagath" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></div>
+      </div>
+      <div class="hero-visual">
+        <div class="portrait-frame"><img class="portrait" src="assets/p.jpg" width="2523" height="2499" alt="Portrait of Made Sakadea Jagath Baratha" fetchpriority="high"><span class="portrait-corner corner-top" aria-hidden="true"></span><span class="portrait-corner corner-bottom" aria-hidden="true"></span><span class="portrait-index" aria-hidden="true">SJ / 01</span></div>
+        <div class="portrait-caption"><span class="caption-symbol" aria-hidden="true">↳</span><div><strong>Find. Validate. Retest.</strong><span>Web applications, backend services & infrastructure.</span></div></div>
+      </div>
+      <div class="hero-foot"><span>RESEARCH. VALIDATE. SECURE.</span><a href="#about">Get to know me <span aria-hidden="true">↓</span></a></div>
+    </section>
+    <section class="section section-about" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <div class="section-heading"><p class="eyebrow section-number">01 / ABOUT</p><h2 id="about-title">Find vulnerabilities.<br>Understand their impact.</h2></div>
+        <div class="about-layout">
+          <div class="about-story"><p>My focus is penetration testing and vulnerability research across web applications, backend services, and infrastructure. I investigate weaknesses, validate findings, and document their impact with clear, reproducible evidence.</p><p>I work with development teams on remediation and retesting, and build Python automation to support security findings and reporting. My research experience includes bug bounty participation and responsible vulnerability disclosure.</p><div class="location-line"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M20 10c0 6-8 11-8 11S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg> Based in Badung, Bali, Indonesia</div></div>
+          <div class="expertise-list">
+            <article class="expertise"><span class="expertise-index">01</span><div><h3>Penetration testing</h3><p>Web applications · Backend services · Infrastructure · Vulnerability assessment</p></div><span class="expertise-arrow" aria-hidden="true">↗</span></article>
+            <article class="expertise"><span class="expertise-index">02</span><div><h3>Security research</h3><p>Vulnerability validation · Impact analysis · Bug bounty · Responsible disclosure</p></div><span class="expertise-arrow" aria-hidden="true">↗</span></article>
+            <article class="expertise"><span class="expertise-index">03</span><div><h3>Reporting & remediation</h3><p>Reproducible findings · Remediation guidance · Retesting · Python automation</p></div><span class="expertise-arrow" aria-hidden="true">↗</span></article>
+          </div>
         </div>
-    </div>
+      </div>
+    </section>
+    <section class="section container" id="experience" aria-labelledby="experience-title">
+      <div class="section-heading heading-split"><div><p class="eyebrow section-number">02 / SECURITY EXPERIENCE</p><h2 id="experience-title">Hands-on testing.<br>Actionable findings.</h2></div><p class="section-note">Penetration testing, vulnerability assessment,<br>and incident analysis in practice.</p></div>
+      <div class="timeline">
+        <article class="experience-row experience-current">
+          <div class="experience-date"><span>JUL 2026 — PRESENT</span><span class="current-label">Current role</span></div>
+          <div class="experience-content">
+            <p class="organization">PT Protergo Siber Sekuriti</p>
+            <h3>Penetration Tester</h3>
+            <p class="role-context">Contract · South Jakarta, Jakarta, Indonesia · Hybrid</p>
+            <p>Test web applications, backend services, and infrastructure. Validate vulnerabilities, document impact, and work with developers on remediation and retesting.</p>
+            <p>Build Python automation to support security findings and reporting.</p>
+            <div class="tags"><span>Penetration testing</span><span>Vulnerability validation</span><span>Impact assessment</span><span>Retesting</span><span>Python automation</span></div>
+          </div>
+          <span class="timeline-marker" aria-hidden="true">01</span>
+        </article>
+        <article class="experience-row"><div class="experience-date"><span>JAN 2024 — JUL 2026</span></div><div class="experience-content"><p class="organization">PT Digital Sekuriti Indonesia</p><h3>Junior Information Security Engineer</h3><p>Performed penetration testing and vulnerability assessments for web applications, backend services, and infrastructure. Validated findings, documented impact, and coordinated remediation and retesting with development teams.</p><p>Built Python automation to create GitLab issues from security findings and track remediation.</p><div class="tags"><span>Penetration testing</span><span>Vulnerability reporting</span><span>Python</span><span>Remediation tracking</span></div></div><span class="timeline-marker" aria-hidden="true">02</span></article>
+        <article class="experience-row"><div class="experience-date"><span>OCT 2022 — AUG 2023</span></div><div class="experience-content"><p class="organization">Djoin Id</p><h3>Security Engineer</h3><p>Tested web servers and infrastructure, investigated security incidents, and supported patches and remediation. Communicated technical findings and security risks to the teams responsible.</p><div class="tags"><span>Web server security</span><span>Incident analysis</span><span>Remediation</span></div></div><span class="timeline-marker" aria-hidden="true">03</span></article>
+      </div>
+      <div class="education"><p class="eyebrow">THE FOUNDATION</p><div><h3>Computer Systems</h3><p>ITB STIKOM Bali</p><span>May 2016 — Apr 2022</span></div><div><h3>Software Engineering</h3><p>SMK Wira Harapan</p><span>May 2013 — May 2016</span></div></div>
+    </section>
+    <section class="section section-work" id="research" aria-labelledby="research-title">
+      <div class="container">
+        <div class="section-heading heading-split">
+          <div><p class="eyebrow section-number">03 / SECURITY RESEARCH</p><h2 id="research-title">Vulnerability research.<br><span class="accent">Responsible disclosure.</span></h2></div>
+          <p class="section-note">Responsible disclosure acknowledgements<br>and participation in security programs.</p>
+        </div>
+        <div class="research-grid">
+          <a class="recognition-row" href="assets/MADE%20SAKADEA%20JAGATH%20BARATHA.pdf" target="_blank" rel="noopener noreferrer"><img src="assets/certificates/bssn.webp" width="900" height="750" loading="lazy" alt="BSSN VVIP Program participation certificate"><div><span class="recognition-type">VULNERABILITY IDENTIFICATION · 2024</span><h3>BSSN VVIP Program</h3><p>Participated in the BSSN VVIP vulnerability identification program in Bali.</p></div><span class="row-arrow" aria-hidden="true">↗</span></a>
+          <a class="recognition-row" href="assets/Kj3edxZpYylZHfMg03ymDK9etIU2UQzsaZ72gqtd_signed.pdf" target="_blank" rel="noopener noreferrer"><img src="assets/certificates/bali-digifest.webp" width="900" height="636" loading="lazy" alt="Bali Digital Festival II bug bounty participation certificate"><div><span class="recognition-type">BUG BOUNTY COMPETITION · 2023</span><h3>Bali Digital Festival II</h3><p>Participated in the Bug Bounty Competition at Bali Digital Festival II.</p></div><span class="row-arrow" aria-hidden="true">↗</span></a>
+          <a class="recognition-row" href="assets/Made%20Sakadea%20Jagath%20Baratha(1).pdf" target="_blank" rel="noopener noreferrer"><img src="assets/certificates/jinom.webp" width="900" height="636" loading="lazy" alt="Jinom vulnerability reporting certificate of appreciation"><div><span class="recognition-type">RESPONSIBLE DISCLOSURE · 2022</span><h3>Jinom · Web vulnerability reporting</h3><p>Recognized by PT Jinom Network Indonesia for ethically finding and reporting web vulnerabilities.</p></div><span class="row-arrow" aria-hidden="true">↗</span></a>
+          <a class="recognition-row" href="assets/Sertifikat%20Bug%20Hunter.png" target="_blank" rel="noopener noreferrer"><img src="assets/certificates/wegodev.webp" width="900" height="636" loading="lazy" alt="Wegodev bug hunter certificate of appreciation"><div><span class="recognition-type">BUG HUNTER RECOGNITION · 2022</span><h3>Wegodev · Server-path disclosure</h3><p>Recognized for reporting server-path disclosure triggered by specific application errors.</p></div><span class="row-arrow" aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+    <section class="section container" id="credentials" aria-labelledby="credentials-title">
+      <div class="section-heading heading-split"><div><p class="eyebrow section-number">04 / SECURITY CERTIFICATIONS</p><h2 id="credentials-title">Training behind<br>the practice.</h2></div><p class="section-note">Cybersecurity, network administration,<br>and computer forensics training.</p></div>
+      <div class="credentials-layout">
+        <article class="featured-credential"><a class="certificate-preview" href="assets/CWL-Certificate.pdf" target="_blank" rel="noopener noreferrer" aria-label="View CyberWarFare Labs C3SA certificate PDF"><img src="assets/certificates/c3sa.webp" width="900" height="695" loading="lazy" alt="CyberWarFare Labs C3SA certificate awarded to Made Sakadea Jagath Baratha"><span class="certificate-open" aria-hidden="true">↗</span></a><div class="featured-credential-copy"><p class="eyebrow accent">CYBERWARFARE LABS · 2024</p><h3>Certified Cyber Security Analyst</h3><p>C3SA Premium Edition</p><span class="credential-validity">Credential period: Jun 2024 — Jun 2026</span><a class="text-link" href="assets/CWL-Certificate.pdf" target="_blank" rel="noopener noreferrer">View certificate <span aria-hidden="true">↗</span></a></div></article>
+        <div class="credential-history"><p class="eyebrow accent">NETWORK & FORENSIC FOUNDATIONS</p><div class="earlier-grid"><article><span class="eyebrow">MIKROTIK</span><h3>MikroTik Certified Network Associate</h3><p>Credential period: Mar 2022 — Mar 2025</p></article><article><span class="eyebrow">LSP INFORMATIKA</span><h3>Network Administrator</h3><p>Credential period: Mar 2022 — Mar 2025</p></article><article><span class="eyebrow">FORESEC</span><h3>Certified in Computer Forensic</h3><p>Credential period: Feb 2022 — Feb 2024</p></article><article><span class="eyebrow">FORESEC</span><h3>Certified in Computer Hacking</h3><p>Credential period: Sep 2019 — Sep 2021</p></article></div></div>
+      </div>
 
-    <!-- Jquery -->
-    <script src="js/jquery.min.js"></script>
+    </section>
+    <section class="section section-development" id="portfolio" aria-labelledby="work-title">
+      <div class="container">
+        <p class="eyebrow section-number">05 / ADDITIONAL BACKGROUND</p>
+        <h2 id="work-title">Development background</h2>
+        <p class="development-intro">Earlier backend experience that informs how I test applications today.</p>
+        <details class="earlier-credentials development-details">
+          <summary><span>Explore earlier roles & projects <span class="summary-note">/ PHP, Laravel & academic systems</span></span><span class="details-symbol" aria-hidden="true">+</span></summary>
+          <div class="timeline">
+        <article class="experience-row"><div class="experience-date"><span>MAY 2022 — SEP 2022</span></div><div class="experience-content"><p class="organization">Djoin Id</p><h3>Software Engineer</h3><p>Developed features, resolved backend bugs, and maintained Laravel applications with a focus on stability and reliable application behavior.</p><div class="tags"><span>PHP</span><span>Laravel</span><span>MySQL</span></div></div><span class="timeline-marker" aria-hidden="true">01</span></article>
+        <article class="experience-row"><div class="experience-date"><span>AUG 2019 — MAY 2022</span></div><div class="experience-content"><p class="organization">ITB STIKOM Bali</p><h3>Junior PHP Backend Developer</h3><p>Built a guardianship scheduling module and supported the SION academic information system API. Maintained backend services for academic workflows and internal systems.</p><div class="tags"><span>Backend development</span><span>Academic systems</span><span>REST API</span></div></div><span class="timeline-marker" aria-hidden="true">02</span></article>
+          </div>
+          <h3 class="development-projects-title">Selected development projects</h3>
+        <div class="project-grid">
+          <article class="project-card"><button type="button" class="project-preview" data-preview="assets/hakteknas.PNG" data-title="Hakteknas 24 — Registration System" data-alt="Screenshot of the Hakteknas 24 registration website" aria-label="Enlarge Hakteknas registration system screenshot"><span class="browser-chrome" aria-hidden="true"><i></i><i></i><i></i><span>HAKTEKNAS / REGISTRATION</span></span><span class="project-image-wrap"><img src="assets/hakteknas.PNG" alt="Hakteknas 24 event website with its Bali 2019 banner" loading="lazy" width="2000" height="1306"></span><span class="preview-hint">View screenshot <span aria-hidden="true">↗</span></span></button><div class="project-details"><div class="project-meta"><span>EVENT PLATFORM</span><span>01</span></div><h3>Hakteknas 24</h3><p>A registration system for National Technology Day in Bali, built as part of the registration team in 2019.</p><div class="tags"><span>Laravel 5.8</span><span>Vue.js</span><span>MySQL</span></div></div></article>
+          <article class="project-card"><button type="button" class="project-preview" data-preview="assets/perwalian1.PNG" data-title="STIKOM Bali — Guardianship Scheduling" data-alt="Screenshot of the STIKOM Bali guardianship scheduling application sign-in page" aria-label="Enlarge guardianship scheduling screenshot"><span class="browser-chrome" aria-hidden="true"><i></i><i></i><i></i><span>STIKOM BALI / ACADEMIC SYSTEM</span></span><span class="project-image-wrap"><img src="assets/perwalian1.PNG" alt="Sign-in interface of the STIKOM Bali guardianship scheduling application" loading="lazy" width="2000" height="1306"></span><span class="preview-hint">View screenshot <span aria-hidden="true">↗</span></span></button><div class="project-details"><div class="project-meta"><span>ACADEMIC PLATFORM</span><span>02</span></div><h3>Guardianship Scheduling</h3><p>A scheduling module for ITB STIKOM Bali, supporting the university’s academic advising workflows.</p><div class="tags"><span>Laravel 6</span><span>PHP</span><span>SQL Server 2008</span></div></div></article>
+        </div>
 
-    <!-- animate js -->
-    <script src="js/wow.js"></script>
-
-    <!-- init wowjs -->
-    <script>
-        new WOW().init();
-    </script>
-
-    <script src="js/hamburger.js"></script>
-
-
+          <div class="work-footer"><span>Earlier projects from my backend development work.</span><a class="text-link" href="https://github.com/sakadeajagath" target="_blank" rel="noopener noreferrer">Find me on GitHub <span aria-hidden="true">↗</span></a></div>
+        </details>
+      </div>
+    </section>
+    <section class="contact-section" id="contact" aria-labelledby="contact-title"><div class="container"><p class="eyebrow section-number">06 / GET IN TOUCH</p><div class="contact-layout"><div><h2 id="contact-title">Let’s make<br>something <span>secure.</span></h2><p>Have a penetration testing engagement or a security research topic in mind?<br>I’d love to hear about it.</p><a class="contact-email" href="mailto:sakadea2018@gmail.com">sakadea2018@gmail.com <span aria-hidden="true">↗</span></a></div><div class="contact-links"><a href="https://www.linkedin.com/in/sakadeajagath/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a><a href="https://github.com/sakadeajagath" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a><a href="assets/CV_Made_Sakadea_Jagath_Baratha.pdf" download>Download my CV <span aria-hidden="true">↓</span></a></div></div><footer class="footer"><span>© <span data-year>2026</span> Made Sakadea Jagath Baratha</span><span>Made of curiosity. Based in Bali.</span><a href="#home">Back to top <span aria-hidden="true">↑</span></a></footer></div></section>
+  </main>
+  <dialog id="image-preview" class="image-dialog" aria-labelledby="preview-title"><div class="dialog-header"><h2 id="preview-title">Project screenshot</h2><button class="preview-close" type="button" aria-label="Close screenshot preview">×</button></div><img id="preview-image" alt=""></dialog>
 </body>
-
 </html>
